@@ -1,15 +1,8 @@
-# MyLA311_CA
-
-![Demo](./MyLA311_CA_Demo.gif)
-MyLA311 using SODA APIs
-
-# MyLA311 Search (LA City Attorney's Office) v1.35
+# MyLA311 Search (CA) v1.35
 
 MyLA311 uses the public SODA API from data.lacity.org to look up service request information. To avoid confusion between different versions of the same address—such as “200 N Spring St, Los Angeles, CA 90012” versus “200 Spring St”—the system converts the address into GPS coordinates. This helps the app find the correct location and identify nearby issues more accurately.
 
 The application allows users to enter a full or partial address, a City issue number, or a landmark name such as “City Hall.” The results appear in a pop‑up window. Users can also filter the information by issue category, year, and request status (open, closed, or cancelled) directly from the interface.
-
-**Current Version:** v1.0
 
 ## What This App Does
 
@@ -18,6 +11,8 @@ The application allows users to enter a full or partial address, a City issue nu
 - Filters results by status (Open/Closed/Cancelled) and year buckets (`2026`, `2025`, `2024`, `2023`, `2022-Prior`).
 - Shows interactive map markers, nearby radius results, and a popup results window.
 - Lets users copy SR numbers and open result addresses directly in Google Maps.
+
+![Demo](./MyLA311_CA_Demo.gif)
 
 ## Using The App
 
@@ -28,18 +23,11 @@ The application allows users to enter a full or partial address, a City issue nu
 5. Click an SR badge to copy the SR number.
 6. Click the address line to open Google Maps for that location.
 
-## SODA Configuration
+## 🥤SODA Configuration
 
 - `App Token` is optional but recommended to reduce throttling.
 - `Max results per year` controls per-dataset fetch size.
 - `Last updated` shows the latest date detected from the configured SODA dataset.
-
-
-## Troubleshooting
-
-- `SODA live data is disabled`: enable it in SODA Live Configuration and save.
-- `SR not found`: verify SR format and remove extra spaces.
-- Slow response: add an App Token and retry.
 
 ## Application Logic Overview
 
@@ -71,7 +59,9 @@ The application allows users to enter a full or partial address, a City issue nu
 - Added application logic summary and audit log to README.md
 
 ## Version History
-
+- v1.35: Performance tune and logic clean up.
+- v1.3: Added support for search by using landmark.
+- v1.2: Added support for filter logic.
 - v1.1: Added support for 2025b dataset (73a2-6ar5, v2026 schema) in address/radius search and UI filter logic.
 - v1.0: Initial version with SODA live data, multi-year support, and UI filters.
 
