@@ -4,6 +4,8 @@ MyLA311 uses the public SODA API from data.lacity.org to look up service request
 
 The application allows users to enter a full or partial address, a City issue number, or a landmark name such as “City Hall.” The results appear in a pop‑up window. Users can also filter the information by issue category, year, and request status (open, closed, or cancelled) directly from the interface.
 
+![Demo](./MyLA311_CA_Demo.gif)
+
 ## What This App Does
 
 - Searches by address or SR number against `data.lacity.org / MyLA311` datasets.
@@ -11,8 +13,6 @@ The application allows users to enter a full or partial address, a City issue nu
 - Filters results by status (Open/Closed/Cancelled) and year buckets (`2026`, `2025`, `2024`, `2023`, `2022-Prior`).
 - Shows interactive map markers, nearby radius results, and a popup results window.
 - Lets users copy SR numbers and open result addresses directly in Google Maps.
-
-![Demo](./MyLA311_CA_Demo.gif)
 
 ## Using The App
 
